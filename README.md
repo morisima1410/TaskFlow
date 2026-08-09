@@ -46,6 +46,7 @@ TaskFlow is a modern and professional Task Management Web Application designed t
 ## 🏗️ Project Structure
 
 TaskFlow/
+│
 ├── index.html
 ├── style.css
 ├── script.js
@@ -178,7 +179,7 @@ TaskFlow uses SQLite for persistent data storage.
 
 ### 1. Clone the Repository
 
-    git clone YOUR_GITHUB_REPOSITORY_URL
+    git clone 
 
 ### 2. Open the Project
 
