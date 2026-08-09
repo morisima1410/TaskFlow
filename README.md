@@ -2,7 +2,9 @@
 
 ### Plan • Track • Complete
 
-TaskFlow is a modern and professional Task Management Web Application designed to help users organize, track, and complete their tasks efficiently.
+TaskFlow is a modern and professional Task Management Web Application designed to help users organize, manage, track, and complete their daily tasks efficiently.
+
+---
 
 ## ✨ Features
 
@@ -15,36 +17,45 @@ TaskFlow is a modern and professional Task Management Web Application designed t
 - 🔎 Search Tasks
 - 🎯 Filter & Sort Tasks
 - 📌 Task Categories
-- 🚦 Task Priorities
+- 🚦 Task Priority Management
 - ✅ Task Status Management
-- 📅 Due Dates
+- 📅 Due Date Management
 - 👤 User Profile
 - 📈 Dynamic Dashboard Statistics
-- 💾 SQLite Database
-- 📱 Responsive Design
+- 💾 SQLite Persistent Database
+- 📱 Fully Responsive Design
 - 🌙 Modern Dark UI
 - 🔔 Toast Notifications
 
-## 🛠️ Tech Stack
+---
+
+## 🛠️ Technology Stack
 
 ### Frontend
+
 - HTML5
 - CSS3
 - Vanilla JavaScript
 
 ### Backend
+
 - Node.js
 - Express.js
 
 ### Database
+
 - SQLite
 
 ### Authentication
+
 - Express Session
 - bcryptjs
 
+---
+
 ## 🏗️ Project Structure
 
+<pre>
 TaskFlow/
 │
 ├── index.html
@@ -52,27 +63,38 @@ TaskFlow/
 ├── script.js
 ├── server.js
 ├── package.json
-└── taskflow.db
+├── package-lock.json
+├── .gitignore
+└── README.md
+</pre>
+
+> Note: `taskflow.db` is created locally when the application runs and should not be committed to GitHub.
+
+---
 
 ## 🔄 Application Architecture
 
+<pre>
 HTML5 + CSS3
-       ↓
+      ↓
 Vanilla JavaScript
-       ↓
+      ↓
 Fetch API
-       ↓
+      ↓
 Node.js + Express.js
-       ↓
-SQLite
-       ↓
-taskflow.db
+      ↓
+SQLite Database
+      ↓
+TaskFlow Data
+</pre>
+
+---
 
 ## 📊 Dashboard
 
 The TaskFlow dashboard provides a complete overview of the user's tasks.
 
-Dashboard includes:
+### Dashboard Includes
 
 - Total Tasks
 - To Do
@@ -83,9 +105,11 @@ Dashboard includes:
 
 All dashboard statistics are dynamically loaded from the SQLite database.
 
+---
+
 ## 📋 Task Management
 
-Each task contains:
+Each task can contain:
 
 - Task Title
 - Description
@@ -114,11 +138,13 @@ Each task contains:
 - In Progress
 - Completed
 
+---
+
 ## 🔐 Authentication
 
 TaskFlow uses secure server-side authentication.
 
-Authentication features include:
+### Authentication Features
 
 - User Registration
 - User Login
@@ -129,23 +155,29 @@ Authentication features include:
 
 Passwords are securely hashed using bcryptjs and are never stored as plain text.
 
+---
+
 ## 🗄️ Database
 
 TaskFlow uses SQLite for persistent data storage.
 
-### Users Table
+### Users
 
-- ID
+The users table stores:
+
+- User ID
 - Name
 - Email
 - Password
 - Created Date
 
-### Tasks Table
+### Tasks
 
-- ID
+The tasks table stores:
+
+- Task ID
 - User ID
-- Title
+- Task Title
 - Description
 - Category
 - Priority
@@ -154,32 +186,38 @@ TaskFlow uses SQLite for persistent data storage.
 - Created Date
 - Updated Date
 
+The SQLite database is automatically initialized when the server starts.
+
+---
+
 ## 🔌 REST API
 
 ### Authentication
 
-- POST /api/register
-- POST /api/login
-- POST /api/logout
-- GET /api/me
+- `POST /api/register`
+- `POST /api/login`
+- `POST /api/logout`
+- `GET /api/me`
 
 ### Tasks
 
-- GET /api/tasks
-- POST /api/tasks
-- PUT /api/tasks/:id
-- DELETE /api/tasks/:id
+- `GET /api/tasks`
+- `POST /api/tasks`
+- `PUT /api/tasks/:id`
+- `DELETE /api/tasks/:id`
 
 ### Profile
 
-- GET /api/profile
-- PUT /api/profile
+- `GET /api/profile`
+- `PUT /api/profile`
+
+---
 
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
 
-git clone: https://github.com/morisima1410/TaskFlow.git
+    git clone https://github.com/morisima1410/TaskFlow.git
 
 ### 2. Open the Project
 
@@ -201,23 +239,26 @@ Or:
 
     http://localhost:3000
 
-The SQLite database will be initialized automatically when the server starts.
+---
 
 ## 🎨 Design
 
-TaskFlow features a clean and professional dark productivity-focused interface.
+TaskFlow features a clean, modern, and professional dark productivity-focused interface.
 
-Design highlights:
+### Design Highlights
 
 - Modern Dashboard
 - Minimal UI
 - Responsive Layout
 - Clean Task Cards
+- Smooth Interactions
 - Subtle Animations
 - Professional Typography
 - Dark Purple Primary Theme
 - Coral Accent Elements
 - User-friendly Navigation
+
+---
 
 ## 🔒 Security
 
@@ -230,6 +271,8 @@ TaskFlow includes:
 - Parameterized SQLite queries
 - Protected task operations
 
+---
+
 ## 🚀 Future Improvements
 
 - 📧 Email Notifications
@@ -240,9 +283,11 @@ TaskFlow includes:
 - 🔄 Recurring Tasks
 - 🌐 Cloud Deployment
 
+---
+
 ## 👨‍💻 Developer
 
-**Sima Mori**
+### Sima Mori
 
 Diploma in Computer Engineering  
 Full Stack Developer
@@ -260,13 +305,19 @@ Full Stack Developer
 - CRUD Operations
 - Git & GitHub
 
+---
+
 ## 📌 Project Purpose
 
-TaskFlow was developed as a practical Full Stack Web Development project to demonstrate frontend development, backend API development, authentication, SQLite database management, REST APIs, and complete CRUD functionality using a lightweight technology stack.
+TaskFlow was developed as a practical Full Stack Web Development project to demonstrate frontend development, backend API development, authentication, SQLite database management, REST APIs, and complete CRUD functionality using a lightweight and modern technology stack.
+
+---
 
 ## ⭐ Support
 
 If you like this project, consider giving the repository a ⭐ on GitHub.
+
+---
 
 ## 📄 License
 
