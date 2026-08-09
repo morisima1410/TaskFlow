@@ -1,4 +1,3 @@
-
 # 🚀 TaskFlow
 
 ### Plan • Track • Complete
@@ -179,128 +178,95 @@ TaskFlow uses SQLite for persistent data storage.
 
 ### 1. Clone the Repository
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+    git clone YOUR_GITHUB_REPOSITORY_URL
 
-2. Open the Project
+### 2. Open the Project
 
-cd TaskFlow
+    cd TaskFlow
 
-3. Install Dependencies
+### 3. Install Dependencies
 
-npm install
+    npm install
 
-4. Start the Server
+### 4. Start the Server
 
-node server.js
+    node server.js
 
 Or:
 
-npm start
+    npm start
 
-5. Open in Browser
+### 5. Open in Browser
 
-http://localhost:3000
+    http://localhost:3000
 
 The SQLite database will be initialized automatically when the server starts.
 
-🎨 Design
+## 🎨 Design
 
 TaskFlow features a clean and professional dark productivity-focused interface.
 
 Design highlights:
 
-Modern Dashboard
+- Modern Dashboard
+- Minimal UI
+- Responsive Layout
+- Clean Task Cards
+- Subtle Animations
+- Professional Typography
+- Dark Purple Primary Theme
+- Coral Accent Elements
+- User-friendly Navigation
 
-Minimal UI
-
-Responsive Layout
-
-Clean Task Cards
-
-Subtle Animations
-
-Professional Typography
-
-Dark Purple Primary Theme
-
-Coral Accent Elements
-
-User-friendly Navigation
-
-
-🔒 Security
+## 🔒 Security
 
 TaskFlow includes:
 
-Password hashing using bcryptjs
+- Password hashing using bcryptjs
+- Server-side session authentication
+- User-specific task access
+- Backend input validation
+- Parameterized SQLite queries
+- Protected task operations
 
-Server-side session authentication
+## 🚀 Future Improvements
 
-User-specific task access
+- 📧 Email Notifications
+- 🔔 Task Reminders
+- 📆 Calendar Integration
+- 📊 Advanced Productivity Analytics
+- 👥 Team Collaboration
+- 🔄 Recurring Tasks
+- 🌐 Cloud Deployment
 
-Backend input validation
+## 👨‍💻 Developer
 
-Parameterized SQLite queries
+**Hardik Mori**
 
-Protected task operations
-
-
-🚀 Future Improvements
-
-📧 Email Notifications
-
-🔔 Task Reminders
-
-📆 Calendar Integration
-
-📊 Advanced Productivity Analytics
-
-👥 Team Collaboration
-
-🔄 Recurring Tasks
-
-🌐 Cloud Deployment
-
-
-👨‍💻 Developer
-
-Sima Mori
-
-Diploma in Computer Engineering
+Diploma in Computer Engineering  
 Full Stack Developer
 
-Technologies Demonstrated
+### Technologies Demonstrated
 
-HTML5
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Node.js
+- Express.js
+- SQLite
+- REST API
+- Authentication
+- CRUD Operations
+- Git & GitHub
 
-CSS3
-
-Vanilla JavaScript
-
-Node.js
-
-Express.js
-
-SQLite
-
-REST API
-
-Authentication
-
-CRUD Operations
-
-Git & GitHub
-
-
-📌 Project Purpose
+## 📌 Project Purpose
 
 TaskFlow was developed as a practical Full Stack Web Development project to demonstrate frontend development, backend API development, authentication, SQLite database management, REST APIs, and complete CRUD functionality using a lightweight technology stack.
 
-⭐ Support
+## ⭐ Support
 
 If you like this project, consider giving the repository a ⭐ on GitHub.
 
-📄 License
+## 📄 License
 
 This project is created for educational and portfolio purposes.
