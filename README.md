@@ -179,7 +179,7 @@ TaskFlow uses SQLite for persistent data storage.
 
 ### 1. Clone the Repository
 
-    git clone 
+git clone: https://github.com/morisima1410/TaskFlow.git
 
 ### 2. Open the Project
 
@@ -242,7 +242,7 @@ TaskFlow includes:
 
 ## 👨‍💻 Developer
 
-**Hardik Mori**
+**Sima Mori**
 
 Diploma in Computer Engineering  
 Full Stack Developer
