@@ -1,3 +1,5 @@
+
+
 # 🚀 TaskFlow
 
 ### Plan • Track • Complete
@@ -285,7 +287,7 @@ Protected task operations
 
 👨‍💻 Developer
 
-Hardik Mori
+Sima Mori 
 
 Diploma in Computer Engineering
 Full Stack Developer
@@ -310,4 +312,11 @@ TaskFlow was developed as a practical Full Stack Web Development project to demo
 ⭐ Support
 
 If you like this project, consider giving the repository a ⭐ on GitHub.
+
+
+---
+
+📄 License
+
+This project is created for educational and portfolio purposes.
 
