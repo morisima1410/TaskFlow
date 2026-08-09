@@ -1,10 +1,9 @@
 
-
 # 🚀 TaskFlow
 
 ### Plan • Track • Complete
 
-TaskFlow is a modern and professional **Task Management Web Application** built to help users organize, track, and complete their tasks efficiently.
+TaskFlow is a modern and professional Task Management Web Application designed to help users organize, track, and complete their tasks efficiently.
 
 ## ✨ Features
 
@@ -21,7 +20,7 @@ TaskFlow is a modern and professional **Task Management Web Application** built 
 - ✅ Task Status Management
 - 📅 Due Dates
 - 👤 User Profile
-- 📈 Dynamic Task Statistics
+- 📈 Dynamic Dashboard Statistics
 - 💾 SQLite Database
 - 📱 Responsive Design
 - 🌙 Modern Dark UI
@@ -47,7 +46,6 @@ TaskFlow is a modern and professional **Task Management Web Application** built 
 
 ## 🏗️ Project Structure
 
-```text
 TaskFlow/
 ├── index.html
 ├── style.css
@@ -56,169 +54,143 @@ TaskFlow/
 ├── package.json
 └── taskflow.db
 
-🔄 Architecture
+## 🔄 Application Architecture
 
-HTML + CSS
-     ↓
+HTML5 + CSS3
+       ↓
 Vanilla JavaScript
-     ↓
+       ↓
 Fetch API
-     ↓
+       ↓
 Node.js + Express.js
-     ↓
+       ↓
 SQLite
-     ↓
+       ↓
 taskflow.db
 
-📊 Dashboard
+## 📊 Dashboard
 
-The dashboard provides a complete overview of the user's tasks:
+The TaskFlow dashboard provides a complete overview of the user's tasks.
 
-Total Tasks
+Dashboard includes:
 
-To Do
+- Total Tasks
+- To Do
+- In Progress
+- Completed
+- Due Today
+- Overdue Tasks
 
-In Progress
+All dashboard statistics are dynamically loaded from the SQLite database.
 
-Completed
+## 📋 Task Management
 
-Due Today
+Each task contains:
 
-Overdue Tasks
+- Task Title
+- Description
+- Category
+- Priority
+- Status
+- Due Date
 
+### Categories
 
-All dashboard statistics are loaded dynamically from SQLite.
+- Personal
+- Work
+- Study
+- Development
+- Other
 
-📋 Task Management
+### Priority Levels
 
-Each task includes:
+- Low
+- Medium
+- High
 
-Title
+### Task Status
 
-Description
+- To Do
+- In Progress
+- Completed
 
-Category
+## 🔐 Authentication
 
-Priority
+TaskFlow uses secure server-side authentication.
 
-Status
+Authentication features include:
 
-Due Date
-
-
-Categories
-
-Personal
-
-Work
-
-Study
-
-Development
-
-Other
-
-
-Priority
-
-Low
-
-Medium
-
-High
-
-
-Status
-
-To Do
-
-In Progress
-
-Completed
-
-
-🔐 Authentication
-
-TaskFlow uses secure server-side authentication with:
-
-User Registration
-
-Login
-
-Logout
-
-Session Management
-
-Password Hashing
-
-User-specific Tasks
-
+- User Registration
+- User Login
+- Secure Logout
+- Session Management
+- Password Hashing
+- User-specific Tasks
 
 Passwords are securely hashed using bcryptjs and are never stored as plain text.
 
-🗄️ Database
+## 🗄️ Database
 
 TaskFlow uses SQLite for persistent data storage.
 
-Users
+### Users Table
 
-users
-├── id
-├── name
-├── email
-├── password
-└── created_at
+- ID
+- Name
+- Email
+- Password
+- Created Date
 
-Tasks
+### Tasks Table
 
-tasks
-├── id
-├── user_id
-├── title
-├── description
-├── category
-├── priority
-├── status
-├── due_date
-├── created_at
-└── updated_at
+- ID
+- User ID
+- Title
+- Description
+- Category
+- Priority
+- Status
+- Due Date
+- Created Date
+- Updated Date
 
-🔌 REST API
+## 🔌 REST API
 
-Authentication
+### Authentication
 
-POST /api/register
-POST /api/login
-POST /api/logout
-GET  /api/me
+- POST /api/register
+- POST /api/login
+- POST /api/logout
+- GET /api/me
 
-Tasks
+### Tasks
 
-GET    /api/tasks
-POST   /api/tasks
-PUT    /api/tasks/:id
-DELETE /api/tasks/:id
+- GET /api/tasks
+- POST /api/tasks
+- PUT /api/tasks/:id
+- DELETE /api/tasks/:id
 
-Profile
+### Profile
 
-GET /api/profile
-PUT /api/profile
+- GET /api/profile
+- PUT /api/profile
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
-1. Clone the repository
+### 1. Clone the Repository
 
+```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 
-2. Open the project
+2. Open the Project
 
 cd TaskFlow
 
-3. Install dependencies
+3. Install Dependencies
 
 npm install
 
-4. Start the server
+4. Start the Server
 
 node server.js
 
@@ -226,7 +198,7 @@ Or:
 
 npm start
 
-5. Open in browser
+5. Open in Browser
 
 http://localhost:3000
 
@@ -234,34 +206,40 @@ The SQLite database will be initialized automatically when the server starts.
 
 🎨 Design
 
-TaskFlow features a clean and professional dark productivity interface with:
+TaskFlow features a clean and professional dark productivity-focused interface.
 
-Modern dashboard
+Design highlights:
+
+Modern Dashboard
 
 Minimal UI
 
-Responsive layout
+Responsive Layout
 
-Clean task cards
+Clean Task Cards
 
-Subtle animations
+Subtle Animations
 
-Professional typography
+Professional Typography
 
-Dark purple primary theme
+Dark Purple Primary Theme
 
-Coral accent elements
+Coral Accent Elements
+
+User-friendly Navigation
 
 
 🔒 Security
 
-Password hashing with bcryptjs
+TaskFlow includes:
 
-Session-based authentication
+Password hashing using bcryptjs
+
+Server-side session authentication
 
 User-specific task access
 
-Backend validation
+Backend input validation
 
 Parameterized SQLite queries
 
@@ -287,7 +265,7 @@ Protected task operations
 
 👨‍💻 Developer
 
-Sima Mori 
+Sima Mori
 
 Diploma in Computer Engineering
 Full Stack Developer
@@ -295,15 +273,25 @@ Full Stack Developer
 Technologies Demonstrated
 
 HTML5
+
 CSS3
+
 Vanilla JavaScript
+
 Node.js
+
 Express.js
+
 SQLite
+
 REST API
+
 Authentication
+
 CRUD Operations
+
 Git & GitHub
+
 
 📌 Project Purpose
 
@@ -313,10 +301,6 @@ TaskFlow was developed as a practical Full Stack Web Development project to demo
 
 If you like this project, consider giving the repository a ⭐ on GitHub.
 
-
----
-
 📄 License
 
 This project is created for educational and portfolio purposes.
-
